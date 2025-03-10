@@ -18,7 +18,7 @@ before_install: if [[ `npm -v` == 2* ]]; then npm i -g npm@3; fi
 # using npm ci instead of npm install to enforce package-lock.json
 install:
   - npm ci
-  - npm ci -g grunt-cli
+  - npm ci grunt-cli
 
 script: grunt build:travis
 
